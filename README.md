@@ -1,8 +1,8 @@
 # Kubernetes
 Kubernetes
-# 📘 Session 1 – Kubernetes Training Introduction  
+# 📘 Kubernetes Learning Introduction:  
 
-## 🎯 Objective of Kubernetes Training
+## 🎯 Objective of Kubernetes Learning
 - Gain **hands-on knowledge** of Kubernetes concepts.  
 - Understand **container orchestration** in real-world projects.  
 - Learn how to:  
