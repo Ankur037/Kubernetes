@@ -51,8 +51,3 @@ Before starting Kubernetes, you should have:
 </details>
 
 ---
-
-## ⏳ Duration
-- ⏰ **30–40 sessions**, each ~1–1.5 hours.  
-- 📚 **Total Duration**: 40–50 hours (theory + practical).  
-- 💡 Extr
