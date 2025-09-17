@@ -1,53 +1,91 @@
 # Kubernetes
 Kubernetes
-# 📘 Kubernetes Learning Introduction:  
+# 📘 Kubernetes Learning  
 
 ## 🎯 Objective of Kubernetes Learning
-- Gain **hands-on knowledge** of Kubernetes concepts.  
-- Understand **container orchestration** in real-world projects.  
-- Learn how to:  
-  - Deploy, scale, and manage containerized apps.  
-  - Use Kubernetes components (Pods, Services, Deployments, etc.).  
-  - Work with YAML manifests for declarative configuration.  
-- Prepare for **industry certifications** (CKA/CKAD).  
-- Enable participants to **work in production environments** with Kubernetes clusters.  
+- Understand **what Kubernetes is** and **why it is needed**.  
+- Learn the **role of container orchestration** in modern DevOps.  
+- Move from **single-container (Docker)** → **multi-container orchestration (K8s)**.  
+- Build **production-level confidence** in:  
+  - Application Deployment  
+  - Scaling & Auto-healing  
+  - Monitoring & Logging  
+  - Security & Networking  
+- Prepare for **Kubernetes Certifications (CKA / CKAD / CKS)**.  
+- Goal → Become **job-ready Kubernetes Administrator / Developer**.  
 
 ---
 
 ## 🛠️ Prerequisites
-Before starting Kubernetes, you should have:  
-1. **Linux Basics** – file system, permissions, services, networking.  
-2. **Containers** – Docker basics (images, containers, volumes, networking).  
-3. **YAML Basics** – since Kubernetes uses YAML manifests.  
-4. **Cloud / Virtualization (Optional but helpful)** – AWS, GCP, or Azure.  
-5. **Networking Fundamentals** – IP, DNS, ports, routing basics.  
+Before starting Kubernetes Learning, you should have:  
+
+1. **Linux Skills**  
+   - Filesystem navigation (`cd`, `ls`, `cat`)  
+   - User management (`useradd`, `passwd`, `groups`)  
+   - Process management (`ps`, `top`, `kill`)  
+   - Networking (`ping`, `netstat`, `ss`, `ip a`)  
+
+2. **Docker Basics**  
+   - Commands: `docker run`, `docker ps`, `docker images`, `docker exec`  
+   - Concepts: Images, Containers, Volumes, Networks  
+
+3. **Networking Fundamentals**  
+   - IP, DNS, Ports, Load balancing  
+
+4. **YAML Basics**  
+   - Key: Value  
+   - Lists (`- item`)  
+   - Dictionaries (`key: value`)  
+
+5. **Optional but Helpful**  
+   - Cloud knowledge (AWS EKS, GCP GKE, Azure AKS)  
+   - Git basics  
 
 ---
 
-## 📜 Certifications Covered
-- 🛡️ **CKA (Certified Kubernetes Administrator)** – Cluster admin, networking, troubleshooting.  
-- 💻 **CKAD (Certified Kubernetes Application Developer)** – Application deployment & management.  
-- 🌐 **KCNA (Kubernetes and Cloud Native Associate)** – Entry level (optional).  
-- 🔒 **CKS (Certified Kubernetes Security Specialist)** – Advanced security.  
+## 📜 Kubernetes Certifications Overview
+- 🛡️ **CKA – Certified Kubernetes Administrator**  
+  - Cluster admin, networking, troubleshooting.  
+  - Exam: 2 hrs, hands-on labs.  
+
+- 💻 **CKAD – Certified Kubernetes Application Developer**  
+  - Focus: Workloads, configs, scaling apps.  
+  - Exam: 2 hrs, hands-on tasks.  
+
+- 🔒 **CKS – Certified Kubernetes Security Specialist**  
+  - Advanced (requires CKA).  
+  - Focus: Security, RBAC, TLS, Pod Security.  
+
+- 🌐 **KCNA – Kubernetes & Cloud Native Associate**  
+  - Entry level, covers basics + theory.  
 
 ---
 
-## 🗂️ Syllabus (High-Level Overview)
+## 🗂️ Training Syllabus (High Level)
 
 <details>
-<summary>📂 Click to expand</summary>
+<summary>📂 Click to Expand</summary>
 
-1. **Introduction to Kubernetes** – Architecture, core components.  
-2. **Kubernetes Core Concepts** – Pods, ReplicaSets, Deployments, Namespaces.  
-3. **Networking in Kubernetes** – Services, DNS, Ingress basics.  
-4. **Storage in Kubernetes** – PV, PVC, StorageClass.  
-5. **Config & Secrets** – ConfigMaps, Secrets, Downward API.  
-6. **Security** – RBAC, Service Accounts, Network Policies, Pod Security.  
-7. **Scheduling & Scaling** – Taints, tolerations, affinity/anti-affinity, HPA.  
-8. **Logging & Monitoring** – `kubectl logs`, metrics-server, Prometheus, Grafana.  
-9. **Helm** – Charts, templates, package management.  
-10. **Real-time Projects / Scenarios** – Deploying apps, troubleshooting, backup/restore.  
+1. **Introduction to Kubernetes** – History, evolution, architecture  
+2. **Kubernetes Components** – API Server, ETCD, Scheduler, Controller, Kubelet, Kube-proxy  
+3. **Core Concepts** – Pods, ReplicaSets, Deployments, Namespaces  
+4. **Networking** – ClusterIP, NodePort, LoadBalancer, Ingress, DNS  
+5. **Storage** – Volumes, PV, PVC, StorageClass  
+6. **Config & Secrets** – ConfigMaps, Secrets, Downward API  
+7. **Scheduling** – Labels, Selectors, Affinity, Taints, Tolerations  
+8. **Security** – RBAC, Service Accounts, Network Policies  
+9. **Monitoring & Logging** – `kubectl logs`, metrics-server, Prometheus, Grafana  
+10. **Helm** – Charts, templating, package management  
+11. **Real-time Projects** – Deploy apps, troubleshooting, scaling  
 
-</details>
+</details>  
 
 ---
+
+## ✅ Learning Outcomes
+After this, you will:  
+- Explain **why Kubernetes is needed**.  
+- List **prerequisites** for learning Kubernetes.  
+- Understand **certification paths** (CKA, CKAD, CKS, KCNA).  
+- Have a **roadmap of syllabus**.  
+- Know the **duration & structure**
