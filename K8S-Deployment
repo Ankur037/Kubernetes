@@ -1,0 +1,50 @@
+# 🚀 Kubernetes Cluster Setup SOP
+
+This repository contains a step-by-step **Standard Operating Procedure (SOP)** for setting up a **Kubernetes cluster** on **Ubuntu 24.04** with one master and two worker nodes using `kubeadm`.
+
+---
+
+## 📌 Key Highlights
+
+**1️⃣ Control Plane (Master Node)**  
+- Brain of the cluster: manages scheduling, API access, etc.  
+- Components: `kube-apiserver`, `etcd`, `kube-scheduler`, `controller-manager`.  
+
+**2️⃣ Worker Nodes**  
+- Run workloads (Pods).  
+- Agent: `kubelet` communicates with master.  
+- Each node must have proper networking & container runtime (`containerd`).  
+
+**3️⃣ Networking (CNI)**  
+- Kubernetes requires a **CNI plugin** for pod-to-pod communication.  
+- **Calico** used for networking and policy enforcement.  
+- Ensure `net.ipv4.ip_forward=1` and swap is off.  
+
+**4️⃣ Cluster Initialization**  
+- `kubeadm init` for master  
+- `kubeadm join` for workers  
+- Apply Calico manifest after master init.  
+
+**5️⃣ Common Issues Fixed**  
+- `NetworkPluginNotReady`: solved by applying Calico manifest  
+- `ip_forward` not set: enabled via sysctl  
+- kubelet restart loops: resolved after proper configuration  
+
+---
+
+## 💡 Key Learnings / Takeaways
+
+- Networking is the backbone — without CNI, pods remain in `ContainerCreating`.  
+- Pre-flight checks matter: swap off, sysctl settings, container runtime configuration.  
+- Use logs (`journalctl -u kubelet`) to debug issues.  
+- Keep sensitive files (kubeconfigs, tokens) out of repo.  
+
+---
+
+## 🔧 Tools & Versions
+
+- Kubernetes v1.28  
+- Ubuntu 24.04  
+- Container runtime: `containerd`  
+- Networking: Calico v3.26  
+
